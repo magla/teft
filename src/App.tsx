@@ -1,12 +1,22 @@
-import { Breadcrumbs, Layout } from "./components";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import { Layout } from "./components/page";
 import { CirclePage } from "./pages";
 
 function App() {
   return (
-    <Layout>
-      <Breadcrumbs />
-      <CirclePage color="purple" />
-    </Layout>
+    <Router>
+      <Layout>
+        <Switch>
+          <Route path="/circles/purple">
+            <CirclePage color="purple" />
+          </Route>
+        </Switch>
+      </Layout>
+    </Router>
   );
 }
 
