@@ -57,3 +57,13 @@
     @apply text-sm;
   }
 }
+
+@layer utilities {
+  .hide-on-desktop {
+    @apply block lg:hidden !important;
+  }
+
+  .hide-on-mobile {
+    @apply hidden lg:block !important;
+  }
+}

@@ -21,11 +21,13 @@ module.exports = {
       },
       secondary: '#FF007A',
       black: '#262626',
+      white: '#ffffff',
       grey: '#C9C9C9',
       neon: '#00FFD1',
       blue: '#1E6CF9',
     },
     spacing: {
+      '4': '4px',
       '8': '8px',
       '12': '12px',
       '16': '16px',
@@ -47,7 +49,7 @@ module.exports = {
     },
     boxShadow: {
       blue: '0px 0px 4px #1E6CF9',
-      DEFAULT: '0px 4px 4px #919EA7',
+      DEFAULT: '0px 4px 4px #e3e6e9',
     },
   },
   variants: {
