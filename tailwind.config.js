@@ -8,11 +8,19 @@ module.exports = {
     extend: {},
     container: {
       center: true,
+      padding: {
+        DEFAULT: '24px',
+        lg: '0px',
+      },
     },
     screens: {
       'sm': '640px',
       'md': '1024px',
       'lg': '1200px',
+    },
+    minHeight: {
+      '0': '0px',
+      '72': '72px',
     },
     colors: {
       primary: {
@@ -49,6 +57,7 @@ module.exports = {
     },
     boxShadow: {
       blue: '0px 0px 4px #1E6CF9',
+      light: '4px 0px 4px #e3e6e9',
       DEFAULT: '0px 4px 4px #e3e6e9',
     },
   },

@@ -21,7 +21,6 @@ export default function Menu() {
           <Link to="#">Triangles</Link>
         </ul>
       </nav>
-
     </>
   );
 }

@@ -38,9 +38,9 @@ export default function Search({ onToggle }: Props) {
   };
 
   return (
-    <div className="relative flex-1 flex items-center">
-      <div className={`bg-white flex-1 flex py-4 px-12 ring-inset rounded ring-2 ${!open && 'hidden'}`}>
-        <input type="text" ref={inputRef} className="flex-1 focus:outline-none" />
+    <div className="relative flex-grow flex items-center">
+      <div className={`bg-white flex-grow flex py-4 px-12 ring-inset rounded ring-2 ${!open && 'hidden'}`}>
+        <input type="text" ref={inputRef} className="flex-grow focus:outline-none" />
         {open && (
           <ClickableIcon onClick={handleCloseClick}>
             <CloseIcon fontSize="small" />

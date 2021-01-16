@@ -8,13 +8,15 @@ interface Props {
 
 export function Layout({ children }: Props) {
   return (
-    <>
+    <div className="flex flex-col h-screen">
       <Header />
-      <Breadcrumbs />
-      <div className="container">
-        {children}
-      </div>
+      <main className="flex-grow">
+        <Breadcrumbs />
+        <div className="container">
+          {children}
+        </div>
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }

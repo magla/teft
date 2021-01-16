@@ -52,10 +52,6 @@
   .excerpt {
     @apply italic text-lg text-center my-48 px-12;
   }
-
-  .sm-text {
-    @apply text-sm;
-  }
 }
 
 @layer utilities {
