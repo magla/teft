@@ -5,42 +5,32 @@
 @layer base {
   @font-face {
     font-family: 'Circular Std';
-    src: url('./assets/fonts/Circular\ Std\ Font.otf') format("otf");
+    font-weight: normal;
+    font-style: normal;
+    src: url('./assets/fonts/CircularStd-Book.ttf') format("truetype");
   }
 
   @font-face {
     font-family: 'Roboto Slab';
-    src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf') format("ttf");
+    src: url('./assets/fonts/RobotoSlab-VariableFont_wght.ttf') format("truetype");
   }
 
   body {
-    @apply font-sans;
+    @apply text-black;
   }
 
   h1 {
-    @apply text-2xl;
+    @apply text-xl text-center my-48 font-semibold;
   }
 
   h2 {
-    @apply text-xl;
-  }
-  
-  .subtitle {
-
-  }
-
-  .caption, .small-text {
-
-  }
-
-  .quote {
-
+    @apply text-lg;
   }
 }
 
 @layer components {
   .btn {
-    @apply px-4 py-2 border-2 rounded-md border-primary text-black;
+    @apply px-24 py-12 border-2 rounded-md border-primary;
   }
 
   .btn:hover {
@@ -57,5 +47,13 @@
 
   .btn:disabled {
     @apply border-grey text-grey;
+  }
+  
+  .excerpt {
+    @apply italic text-lg text-center my-48 px-12;
+  }
+
+  .sm-text {
+    @apply text-sm;
   }
 }

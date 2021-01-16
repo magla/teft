@@ -1,3 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+const debug = require("tailwindcss-debug-screens");
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false,
@@ -9,7 +12,7 @@ module.exports = {
     screens: {
       'sm': '640px',
       'md': '1024px',
-      'lg': '1440px',
+      'lg': '1200px',
     },
     colors: {
       primary: {
@@ -18,23 +21,29 @@ module.exports = {
       },
       secondary: '#FF007A',
       black: '#262626',
+      grey: '#C9C9C9',
       neon: '#00FFD1',
       blue: '#1E6CF9',
-      grey: '#C9C9C9',
     },
     spacing: {
-      '1': '8px',
-      '2': '12px',
-      '3': '16px',
-      '4': '24px',
-      '5': '48px',
-      '6': '64px',
-      '7': '72px',
-      '8': '96px',
+      '8': '8px',
+      '12': '12px',
+      '16': '16px',
+      '24': '24px',
+      '48': '48px',
+      '64': '64px',
+      '72': '72px',
+      '96': '96px',
+    },
+    fontSize: {
+      sm: ['12px', '16px'],
+      base: ['20px', '32px'],
+      lg: ['32px', '40px'],
+      xl: ['56px', '64px'],
     },
     fontFamily: {
-      sans: ["'Circular Std'", 'sans-serif'],
-      serif: ['Roboto Slab', 'serif'],
+      'sans': ['"Circular Std"', ...defaultTheme.fontFamily.sans],
+      'serif': ['"Roboto Slab"', ...defaultTheme.fontFamily.serif],
     },
     boxShadow: {
       blue: '0px 0px 4px #1E6CF9',
@@ -46,5 +55,5 @@ module.exports = {
   },
 
   // TODO: remove
-  plugins: [require("tailwindcss-debug-screens")],
+  plugins: [debug],
 }
