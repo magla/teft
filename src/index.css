@@ -24,13 +24,13 @@
   }
 
   h2 {
-    @apply text-lg font-semibold mb-24 mt-48;
+    @apply text-lg-mobile font-semibold mb-24 mt-48 lg:text-lg;
   }
 }
 
 @layer components {
   .btn {
-    @apply block my-48 px-24 py-12 border-2 rounded-lg border-primary mx-auto font-semibold text-button;
+    @apply block my-48 px-24 py-12 border-2 rounded-lg border-primary mx-auto font-semibold text-sm;
   }
 
   .btn:hover {
@@ -54,6 +54,10 @@
     border-bottom-width: 1px;
   }
 
+  #content p {
+    @apply text-sm lg:text-base;
+  }
+
   #content a {
     @apply text-primary border-primary;
     border-bottom-width: 2px;
@@ -64,15 +68,15 @@
   }
     
   #content blockquote {
-    @apply justify-start font-serif text-button text-secondary text-center shadow-quote p-24 font-light rounded-l-lg absolute bg-white max-w-blockquote top-fifteen lg:p-48 lg:text-lg-mobile lg:top-quarter;
+    @apply justify-start font-serif text-sm text-secondary text-center shadow-quote p-24 font-light rounded-l-lg absolute bg-white max-w-blockquote top-fifteen lg:-ml-12 lg:p-48 lg:text-lg-mobile lg:top-quarter;
   }
 
   #content img {
-    @apply rounded-r-lg self-end pl-24 lg:pl-quarter;
+    @apply rounded-r-lg self-end pl-24 lg:pl-quarter lg:mr-0;
   }
 
   #content figcaption {
-    @apply text-sm mt-24 container lg:mr-quarter lg:ml-quarter;
+    @apply text-xs mt-24 ml-24 mr-24 lg:mr-quarter lg:ml-quarter;
   }
 }
 
