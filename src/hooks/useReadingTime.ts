@@ -1,15 +1,13 @@
-import { useContext } from 'react';
-import { DataContext } from '../api/DataContext';
 import useWordCount from './useWordCount';
 
-export default function useReadingTime() {
-  const data = useContext(DataContext);
-  const { content } = data;
+/**
+ * Get information on how much it takes to read the document,
+ * based on content length (200 words a minute is average)
+ * @param content
+ */
+export default function useReadingTime(content: string) {
+  const words = useWordCount(content);
+  const minutes = Math.ceil(words / 200);
 
-  // const textualContent = content.filter(content => content.type === Types.Intro || Types.Section);
-
-  // const words = useWordCount(htmlContent.join(''));
-  // const minutes = Math.ceil(words / 200);
-
-  return `min read`;
-};
+  return `${minutes} min read`;
+}

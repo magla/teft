@@ -15,7 +15,7 @@ export function Author() {
   } = author;
 
   const date = new Date(created).toLocaleDateString(process.env.LOCALE, DATE_OPTIONS);
-  const readingTime = useReadingTime();
+  const readingTime = useReadingTime(data.content);
   const authorInfo = `${title} ${company} – ${readingTime} – ${date}`;
 
   return (

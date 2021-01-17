@@ -3,5 +3,5 @@
  * @param htmls string[]
  */
 export default function useWordCount(html: string) {
-  return html.replace( /(<([^>]+)>)/ig, '').split(' ').length;
-};
+  return html.replace(/(<([^>]+)>)/gi, '').split(' ').length;
+}
