@@ -1,0 +1,50 @@
+{
+  "id":1,
+  "title":"Purple circles",
+  "excerpt":"Purple is closely associated with violet. In optics, purple and violet refer to colors that look similar, but purples are mixtures of red  and blue or violet light.",
+  "author":{
+    "id":1,
+    "name":"Jane Doe",
+    "meta":{
+      "title":"Projectmanager",
+      "avatar": "kreated-media-0fN7Fxv1eWA-unsplash 1.jpg",
+      "company":"Dekode",
+      "twitterUrl":"#",
+      "instagramUrl":"#",
+      "facebookUrl":"#"
+    }
+  },
+  "created":"2020-03-23",
+  "modified":"2020-03-23",
+  "content":"<p>Purple is closely associated with violet. In common usage, both refer to colors that are between red and blue in hue, with purples closer to red and violets closer to blue. Similarly, in the traditional painters' <a href='#' target='_blank'>color wheel</a>, purple and violet are both placed between red and blue, with purple is closer to red<p><figure><img alt='waves' src='/images/ocean 1.jpg' /><figcaption>In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum, between approximately 380 and 450 nanometers.</figcaption><blockquote><q>The process of making the dye was long, difficult and expensive</q></blockquote></figure><p>In humans, the L (red) cone in the eye is primarily sensitive to long wavelength light in the yellow-red region of the spectrum, but is also somewhat sensitive to the shorter wavelength violet light that primarily stimulates the S (blue) cone.</p><h2>As a result</h2><p>As a result, when violet light strikes the eye, the S-cone is stimulated strongly and the L-cone is stimulated weakly. Accordingly, strong blue light mixed with weaker red light can mimic this pattern of stimulation, causing humans to perceive colors that the same hue as violet, but with lower saturation.</p>",
+  "related":[
+    {
+      "id": 2,
+      "title":"Lorem ipsum",
+      "created":"17-08-2020",
+      "excerpt":"<p>In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.</p>",
+      "image":"/images/1 linten.svg"
+    },
+    {
+      "id": 3,
+      "title":"Lorem ipsum",
+      "created":"17-08-2020",
+      "excerpt":"<p>In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.</p>",
+      "image":"/images/1 stor.svg"
+    },
+    {
+      "id": 4,
+      "title":"Lorem ipsum",
+      "created":"17-08-2020",
+      "excerpt":"<p>In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.</p>",
+      "image":"/images/1 linten.svg"
+    },
+    {
+      "id": 5,
+      "title":"Lorem ipsum",
+      "created":"17-08-2020",
+      "excerpt":"<p>In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.</p>",
+      "image":"/images/1 stor.svg"
+    }
+  ]
+}
