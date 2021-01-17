@@ -1,9 +1,18 @@
+import { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import FooterSection from './FooterSection';
 import { SocialSection } from './SocialSection';
 
 export default function Footer() {
+  const [languageOpen, setLanguageOpen] = useState(false);
+  const [language, setLanguage] = useState(process.env.REACT_APP_LANGUAGE);
+
+  const handleLanguageSelect = useCallback((lang) =>{
+    setLanguageOpen(false);
+    setLanguage(lang);
+  }, []);
+
   return (
     <footer className="w-screen py-48 shadow-light">
       <div className="container">
@@ -47,9 +56,21 @@ export default function Footer() {
               <Link className="link" to="#">
                 Cookies
               </Link>
-              <Link className="link" to="#">
-                Language: ENG (US)
-              </Link>
+              {!languageOpen && (
+                <button className="link" onClick={() => setLanguageOpen(true)}>
+                  Language: {language}
+                </button>
+              )}
+              {languageOpen && (
+                <div className="flex space-x-16">
+                  <button className="link" onClick={() => handleLanguageSelect('ENG (US)')}>
+                    ENG (US)
+                  </button>
+                  <button className="link" onClick={() => handleLanguageSelect('ENG (UK)')}>
+                    ENG (UK)
+                  </button>
+                </div>
+              )}
             </FooterSection>
             <SocialSection facebookUrl="#" twitterUrl="#" instagramUrl="#" />
           </div>

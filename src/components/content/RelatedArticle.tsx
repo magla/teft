@@ -1,6 +1,5 @@
 import { Interface } from '../../api';
 
-const LOCALE = 'no-NO';
 const DATE_OPTIONS = { day: 'numeric', month: 'long', year: 'numeric' };
 
 interface Props {
@@ -8,7 +7,7 @@ interface Props {
 }
 export function RelatedArticle({ article }: Props) {
   const { image, title, created, excerpt } = article;
-  const date = new Date(created).toLocaleDateString(LOCALE, DATE_OPTIONS);
+  const date = new Date(created).toLocaleDateString(process.env.REACT_APP_LOCALE, DATE_OPTIONS);
 
   return (
     <article className="flex flex-col">

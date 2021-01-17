@@ -53,14 +53,18 @@
     @apply border-grey text-grey;
   }
 
-  .link {
-    @apply text-primary border-primary;
-    border-bottom-width: 1px;
+  .link, #content a {
+    @apply text-primary relative;
   }
 
-  #content a {
-    @apply text-primary border-primary;
-    border-bottom-width: 2px;
+  .link::after, #content a::after {
+    @apply bg-primary inline-block absolute bottom-0 left-0 w-full;
+    content: '';
+    height: 1px;
+  }
+
+  #content a::after {
+    height: 2px;
   }
 
   #content figure {

@@ -14,7 +14,7 @@ export function Author() {
     meta: { title, company, avatar, twitterUrl, facebookUrl, instagramUrl },
   } = author;
 
-  const date = new Date(created).toLocaleDateString(process.env.LOCALE, DATE_OPTIONS);
+  const date = new Date(created).toLocaleDateString(process.env.REACT_APP_LOCALE, DATE_OPTIONS);
   const readingTime = useReadingTime(data.content);
   const authorInfo = `${title} ${company} – ${readingTime} – ${date}`;
 
