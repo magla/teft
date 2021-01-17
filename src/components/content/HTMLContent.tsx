@@ -1,9 +1,14 @@
-import { useContext } from "react";
-import { DataContext } from "../../api/DataContext";
-
+import { useContext } from 'react';
+import { DataContext } from '../../api';
 export function HTMLContent() {
   const data = useContext(DataContext);
   const { content } = data;
 
-  return <div id="content" className="my-48" dangerouslySetInnerHTML={{ __html: content }} />;
+  return (
+    <div
+      id="content"
+      className="my-48"
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
+  );
 }

@@ -1,7 +1,12 @@
 import { useContext } from 'react';
-import { DataContext } from '../api/DataContext';
-import { Author, RelatedArticles, CTASection, HTMLContent } from '../components/content';
-import { Excerpt } from '../components/content/Excerpt';
+import { DataContext } from '../api';
+import {
+  Author,
+  RelatedArticles,
+  CTASection,
+  HTMLContent,
+  Excerpt
+} from '../components/content';
 
 interface Props {
   color: string;
@@ -17,10 +22,12 @@ export function CirclePage({ color }: Props) {
         <h1>{title}</h1>
         <Excerpt />
       </header>
-      <div className="lg:mx-auto max-w-content">
+      <div className="center-content">
         <Author />
         <HTMLContent />
-        <RelatedArticles />
+      </div>
+      <RelatedArticles />
+      <div className="center-content">
         <CTASection />
       </div>
     </article>
