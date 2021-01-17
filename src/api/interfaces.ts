@@ -8,10 +8,13 @@ export interface Author {
     twitterUrl: string;
     instagramUrl: string;
     facebookUrl: string;
-  }
-};
+  };
+}
 
-type ShortPost = Pick<Post, 'id' | 'title' | 'excerpt' | 'image' | 'modified'>;
+export type ShortPost = Pick<
+  Post,
+  'id' | 'title' | 'excerpt' | 'image' | 'created'
+>;
 
 export interface Post {
   id: number;
@@ -21,6 +24,9 @@ export interface Post {
   author: Author;
   related: ShortPost[];
   created: string;
-  image?: string;
+  image?: {
+    url: string;
+    alt: string;
+  };
   modified?: string;
 }

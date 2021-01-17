@@ -16,7 +16,7 @@
   }
 
   body {
-    @apply text-black;
+    @apply text-grey;
   }
 
   h1 {
@@ -25,6 +25,10 @@
 
   h2 {
     @apply text-lg-mobile font-semibold mb-24 mt-48 lg:text-lg;
+  }
+
+  p {
+    @apply text-sm lg:text-base;
   }
 }
 
@@ -52,10 +56,6 @@
   .link {
     @apply text-primary border-primary;
     border-bottom-width: 1px;
-  }
-
-  #content p {
-    @apply text-sm lg:text-base;
   }
 
   #content a {
@@ -87,5 +87,9 @@
 
   .hide-on-mobile {
     @apply hidden lg:block !important;
+  }
+
+  .center-content {
+    @apply max-w-content lg:mx-auto;
   }
 }
