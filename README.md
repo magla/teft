@@ -10,15 +10,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Project dependencies
 
-**[TypeScript](https://www.typescriptlang.org/)**\
+**[TypeScript](https://www.typescriptlang.org/)**
 
-**[React Router](https://reactrouter.com/)**\
+**[React Router](https://reactrouter.com/)**
 
-**[ESlint](https://eslint.org/) and prettier**\
+**[ESlint](https://eslint.org/) and prettier**
 
-**[react-tiny-slider](https://www.npmjs.com/package/react-tiny-slider)** - wrapper for [tiny-slider](https://github.com/ganlanyuan/tiny-slider). Chose this one because it is lightweight, has all the needed features, and supports touch events.\
+**[react-tiny-slider](https://www.npmjs.com/package/react-tiny-slider)** - wrapper for [tiny-slider](https://github.com/ganlanyuan/tiny-slider). Chose this one because it is lightweight, has all the needed features, and supports touch events.
 
-**[Tailwindcss](https://www.npmjs.com/package/react-tiny-slider)** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.\
+**[Tailwindcss](https://www.npmjs.com/package/react-tiny-slider)** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.
 
 **[use-react-router-breadcrumbs](https://www.npmjs.com/package/use-react-router-breadcrumbs)** - hook for displaying breadcrumbs
 
