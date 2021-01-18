@@ -8,6 +8,12 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+Beforehand, you will need to create an *.env* file in the root of the project and add the following:
+```
+REACT_APP_LOCALE=no-NO
+REACT_APP_LANGUAGE=ENG (US)
+```
+
 ## Project dependencies
 
 **[TypeScript](https://www.typescriptlang.org/)**
