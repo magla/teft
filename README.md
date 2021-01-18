@@ -1,9 +1,6 @@
-# Getting Started with Create React App
+# Teft website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
 In the project directory, you can run:
 
 ### `yarn start`
@@ -11,36 +8,35 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Project dependencies
 
-### `yarn test`
+**TypeScript**
+**React Router**
+**ESlint**
+**react-tiny-slider** - wrapper for [tiny-slider][https://github.com/ganlanyuan/tiny-slider]. Chose this one because it is lightweight, has all the needed features, and supports touch events.
+**Tailwindcss** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.
+**use-react-router-breadcrumbs** - hook for displaying breadcrumbs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Questions
 
-### `yarn build`
+**What are the benefits of using React?**
+React is a modern framework that allows you to make modular, component-based frontend. Compared to e.g. jQuery, it allows you more control over the specific component behavior and interactivity. Oragnization of code is usually also greatly improved. 
+React provides only the View level (in a typical MVP), so it can be hooked up to a headless CMS or a Rest API. Vue is also a good candidate for this task, but frameworks like Angular are more suitable for web apps, where the focus is not on the contect, but functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Are there any drawbacks of using React?**
+React does not allow on easy content input/change. If using only React, a whole seperate project to create a user-friendly admin page would have to be developed. SEO with React is still a problem, although search engines have improved. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**How could those drawbacks be improved?**
+SEO problems can be mitigated with server-side rendering.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Additional explanations
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- The structure of the project is rather flat, since the requirements were simple. If making a larger app, I would probably use an approach where components and containers are encapsulated within separate modules. - Also, the Context API was used instead of Redux, which I usually use in larger apps. 
+- I tried to have the data layer mimick a situation where the data is retrieved via a Rest API, like it would be with WP Rest API. Some of the content is received as raw HTML, to show how I would handle that situation.
+- There are some additional interactive elements added, but I did not assume what the e.g. mobile menu would look like
+- Icons are pure SVG, I did not want to use Material UI because of some restrictions, and the bloat
+- What I could also add to the existing code (if requested): 
+  - responsive jpg image for mobile
+  - better tablet version
+  - testing
+  - better accessibilty (aria)
