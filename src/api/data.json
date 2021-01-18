@@ -2,12 +2,14 @@
   "id":1,
   "title":"Purple circles",
   "excerpt":"Purple is closely associated with violet. In optics, purple and violet refer to colors that look similar, but purples are mixtures of red  and blue or violet light.",
+  "link": "#",
   "author":{
     "id":1,
     "name":"Jane Doe",
+    "link": "#",
     "meta":{
       "title":"Projectmanager",
-      "avatar": "kreated-media-0fN7Fxv1eWA-unsplash 1.jpg",
+      "avatar": "/images/kreated-media-0fN7Fxv1eWA-unsplash 1.jpg",
       "company":"Dekode",
       "twitterUrl":"#",
       "instagramUrl":"#",
@@ -23,6 +25,7 @@
       "title":"Lorem ipsum",
       "created":"09-04-2020",
       "excerpt":"In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
+      "link": "#",
       "image": {
         "url": "/images/1 stor.svg",
         "alt": "stor"
@@ -32,6 +35,7 @@
       "id": 3,
       "title":"Lorem ipsum",
       "created":"08-08-2020",
+      "link": "#",
       "excerpt":"In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
       "image": {
         "url": "/images/2 stor.svg",
@@ -42,6 +46,7 @@
       "id": 4,
       "title":"Lorem ipsum",
       "created":"03-08-2020",
+      "link": "#",
       "excerpt":"In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
       "image": {
         "url": "/images/1 stor.svg",
@@ -52,6 +57,7 @@
       "id": 5,
       "title":"Lorem ipsum",
       "created":"02-08-2020",
+      "link": "#",
       "excerpt":"In optics, violet is a spectral color: It refers to the color of any different single wavelength of light on the short wavelength end of the visible spectrum.",
       "image": {
         "url": "/images/2 stor.svg",

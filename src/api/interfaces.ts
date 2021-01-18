@@ -1,6 +1,7 @@
 export interface Author {
   id: number;
   name: string;
+  link: string;
   meta: {
     title: string;
     company: string;
@@ -13,7 +14,7 @@ export interface Author {
 
 export type ShortPost = Pick<
   Post,
-  'id' | 'title' | 'excerpt' | 'image' | 'created'
+  'id' | 'title' | 'excerpt' | 'image' | 'created' | 'link'
 >;
 
 export interface Post {
@@ -24,6 +25,7 @@ export interface Post {
   author: Author;
   related: ShortPost[];
   created: string;
+  link: string;
   image?: {
     url: string;
     alt: string;
