@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **[react-tiny-slider](https://www.npmjs.com/package/react-tiny-slider)** - wrapper for [tiny-slider](https://github.com/ganlanyuan/tiny-slider). Chose this one because it is lightweight, has all the needed features, and supports touch events.
 
-**[Tailwindcss](https://www.npmjs.com/package/react-tiny-slider)** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.
+**[Tailwindcss](https://tailwindcss.com/)** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.
 
 **[use-react-router-breadcrumbs](https://www.npmjs.com/package/use-react-router-breadcrumbs)** - hook for displaying breadcrumbs
 
@@ -26,7 +26,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 **What are the benefits of using React?**\
 React is a modern framework that allows you to make modular, component-based frontend. Compared to e.g. jQuery, it allows you more control over the specific component behavior and interactivity. Oragnization of code is usually also greatly improved.\
-React provides only the View level (in a typical MVP), so it can be hooked up to a headless CMS or a Rest API. Vue is also a good candidate for this task, but frameworks like Angular are more suitable for web apps, where the focus is not on the contect, but functionality.
+React provides only the View level (in a typical MVP), so it can be hooked up to a headless CMS or a Rest API. Vue is also a good candidate for this task, but frameworks like Angular are more suitable for web apps, where the focus is not on the content, but functionality.
 
 **Are there any drawbacks of using React?**\
 React does not allow on easy content input/change. If using only React, a whole seperate project to create a user-friendly admin page would have to be developed. SEO with React is still a problem, although search engines have improved. 
