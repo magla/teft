@@ -1,5 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../api';
+import { Breadcrumbs } from '../components/navigation';
 import {
   Author,
   RelatedArticles,
@@ -13,19 +14,22 @@ export function ShapePage() {
   const { title } = data;
 
   return (
-    <article>
-      <header>
-        <h1>{title}</h1>
-        <Excerpt />
-      </header>
-      <div className="center-content">
-        <Author />
-        <HTMLContent />
-      </div>
-      <RelatedArticles />
-      <div className="center-content">
-        <CTASection />
-      </div>
-    </article>
+    <>
+      <Breadcrumbs />
+      <article>
+        <header>
+          <h1>{title}</h1>
+          <Excerpt />
+        </header>
+        <div className="center-content">
+          <Author />
+          <HTMLContent />
+        </div>
+        <RelatedArticles />
+        <div className="center-content">
+          <CTASection />
+        </div>
+      </article>
+    </>
   );
 }

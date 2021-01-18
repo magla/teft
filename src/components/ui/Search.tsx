@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Search as SearchIcon, Close } from '../../assets/images';
+import { useOutsideClick } from '../../hooks';
 import { ClickableIcon } from './ClickableIcon';
 
 interface Props {
@@ -9,7 +10,12 @@ interface Props {
 export function Search({ onToggle }: Props) {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
+  const searchRef = useRef<HTMLDivElement | null>(null);
 
+  useOutsideClick(searchRef, () => {
+    setOpen(false);
+  });
+  
   useEffect(() => {
     if (onToggle) {
       onToggle(open);
@@ -24,6 +30,10 @@ export function Search({ onToggle }: Props) {
 
   const handleCloseClick = () => {
     setOpen(!open);
+    
+    if (inputRef.current) {
+      inputRef.current.value = '';
+    }
   };
 
   const handleSearchClick = () => {
@@ -32,14 +42,14 @@ export function Search({ onToggle }: Props) {
       return;
     }
 
-    // Implement search function
+    // TODO: Implement search function
     // search();
   };
 
   return (
-    <div className="relative flex-grow flex items-center">
+    <div ref={searchRef} className="relative flex-grow flex items-center justify-end">
       <div
-        className={`bg-white flex-grow flex py-4 px-12 ring-inset rounded-lg ring-2 ${
+        className={`bg-white flex-grow flex py-4 px-12 ${
           !open && 'hidden'
         }`}
       >
@@ -48,11 +58,9 @@ export function Search({ onToggle }: Props) {
           ref={inputRef}
           className="flex-grow focus:outline-none"
         />
-        {open && (
-          <ClickableIcon onClick={handleCloseClick}>
-            <Close fontSize="small" />
-          </ClickableIcon>
-        )}
+        <ClickableIcon onClick={handleCloseClick}>
+          <Close fontSize="small" />
+        </ClickableIcon>
       </div>
       <ClickableIcon onClick={handleSearchClick}>
         {!open && <span className="hide-on-mobile mr-8">Search</span>}

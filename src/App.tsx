@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { DataContext } from './api/DataContext';
 import { Layout } from './components/page';
-import { ShapePage } from './containers';
+import { ShapePage, NotFoundPage } from './containers';
 import { default as data } from './api/data.json';
 import { useEffect } from 'react';
 
@@ -15,9 +15,11 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route exact path="/" />
-            <Route path="/:shape/:color">
+            <Route path="/circles/purple">
               <ShapePage />
+            </Route>
+            <Route>
+              <NotFoundPage />
             </Route>
           </Switch>
         </Layout>

@@ -6,7 +6,7 @@ export function Excerpt() {
   const { excerpt } = data;
 
   return (
-    <p className="italic text-lg-mobile lg:text-lg text-center my-48 px-12">
+    <p className="italic font-normal text-lg-mobile text-center my-48 lg:px-12 lg:text-lg ">
       {excerpt}
     </p>
   );

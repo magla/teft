@@ -1,5 +1,4 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const debug = require("tailwindcss-debug-screens");
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
@@ -77,13 +76,10 @@ module.exports = {
       blue: '0px 0px 4px #1E6CF9',
       light: '4px 0px 4px #e3e6e9',
       DEFAULT: '0px 4px 4px #e3e6e9',
-      quote: '0px 4px 8px #dbdfe2'
+      quote: '0px 4px 8px #d6d6d6'
     },
   },
   variants: {
     extend: {},
   },
-
-  // TODO: remove
-  plugins: [debug],
 }
