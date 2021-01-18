@@ -13,7 +13,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 **TypeScript**\
 **React Router**\
 **ESlint**\
-**react-tiny-slider** - wrapper for [tiny-slider][https://github.com/ganlanyuan/tiny-slider]. Chose this one because it is lightweight, has all the needed features, and supports touch events.\
+**react-tiny-slider** - wrapper for [tiny-slider](https://github.com/ganlanyuan/tiny-slider). Chose this one because it is lightweight, has all the needed features, and supports touch events.\
 **Tailwindcss** - haven't used it before, actually, but liked the features, so decided to try it out on this example. Happy with 90% of the workflow with it.\
 **use-react-router-breadcrumbs** - hook for displaying breadcrumbs\
 
