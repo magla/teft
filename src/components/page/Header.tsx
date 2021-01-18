@@ -6,7 +6,7 @@ export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <header className="shadow h-72 min-h-72 w-screen flex items-center">
+    <header className="shadow h-72 min-h-72 flex items-center">
       <div className="container flex font-bold text-header">
         <div className="flex-none order-first flex align-center lg:order-2 lg:flex-grow lg:items-end">
           <Menu />

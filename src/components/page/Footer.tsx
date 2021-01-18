@@ -14,7 +14,7 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="w-screen py-48 shadow-light">
+    <footer className=" py-48 shadow-light">
       <div className="container">
         <Logo />
         <div className="flex flex-col mt-48 lg:space-x-48 lg:flex-row lg:justify-between">

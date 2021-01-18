@@ -30,7 +30,7 @@ export function Slider({ children }: Props) {
   }
 
   return (
-    <div className="relative flex items-center">
+    <div className="relative flex items-center my-96 -ml-16 -mr-24">
       <ClickableIcon
         onClick={slideLeft}
         className="text-primary hide-on-mobile absolute -left-52"

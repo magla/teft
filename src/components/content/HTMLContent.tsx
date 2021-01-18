@@ -7,7 +7,6 @@ export function HTMLContent() {
   return (
     <div
       id="content"
-      className="my-48"
       dangerouslySetInnerHTML={{ __html: content }}
     />
   );
