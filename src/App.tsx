@@ -3,8 +3,13 @@ import { DataContext } from './api/DataContext';
 import { Layout } from './components/page';
 import { ShapePage } from './containers';
 import { default as data } from './api/data.json';
+import { useEffect } from 'react';
 
 function App() {
+  useEffect(() => {
+    document.title = 'teft';
+  });
+  
   return (
     <DataContext.Provider value={data}>
       <Router>
