@@ -36,7 +36,8 @@ SEO problems can be mitigated with server-side rendering.
 
 ## Additional explanations
 
-- The structure of the project is rather flat, since the requirements were simple. If making a larger app, I would probably use an approach where components and containers are encapsulated within separate modules. - Also, the Context API was used instead of Redux, which I usually use in larger apps. 
+- The structure of the project is rather flat, since the requirements were simple. If making a larger app, I would probably use an approach where components and containers are encapsulated within separate modules.
+- The Context API was used instead of Redux, which I usually use in larger apps. 
 - I tried to have the data layer mimick a situation where the data is retrieved via a Rest API, like it would be with WP Rest API. Some of the content is received as raw HTML, to show how I would handle that situation.
 - There are some additional interactive elements added, but I did not assume what the e.g. mobile menu would look like
 - Icons are pure SVG, I did not want to use Material UI because of some restrictions, and the bloat
