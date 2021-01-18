@@ -74,9 +74,9 @@ module.exports = {
     },
     boxShadow: {
       blue: '0px 0px 4px #1E6CF9',
-      light: '4px 0px 4px #e3e6e9',
-      DEFAULT: '0px 4px 4px #e3e6e9',
-      quote: '0px 4px 8px #d6d6d6'
+      light: '4px 0px 4px rgba(145, 158, 167, 0.25)',
+      DEFAULT: '0px 4px 4px rgba(145, 158, 167, 0.25)',
+      quote: '0px 4px 8px rgba(145, 158, 167, 0.32)'
     },
   },
   variants: {
