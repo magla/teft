@@ -25,9 +25,9 @@ export function Author() {
         src={`/images/${avatar}`}
         className="flex-none object-contain w-88 h-88"
       />
-      <div className="flex-grow flex flex-col space-y-8">
-        <span className="text-base text-primary">{name}</span>
-        <span className="text-xs">{authorInfo}</span>
+      <div className="flex-grow flex flex-col">
+        <span className="text-base text-primary mb-8">{name}</span>
+        <span className="text-xs mb-16">{authorInfo}</span>
         <SocialSection
           facebookUrl={facebookUrl}
           twitterUrl={twitterUrl}

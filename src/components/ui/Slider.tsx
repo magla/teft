@@ -1,8 +1,7 @@
 import { useRef, useCallback } from 'react';
 import Carousel from 'react-tiny-slider';
-import ArrowBackSharpIcon from '@material-ui/icons/ArrowBackSharp';
-import ArrowForwardSharpIcon from '@material-ui/icons/ArrowForwardSharp';
-import ClickableIcon from './ClickableIcon';
+import { ArrowLeft, ArrowRight } from '../../assets/images';
+import { ClickableIcon } from './ClickableIcon';
 
 interface Props {
   children: React.ReactElement[];
@@ -36,7 +35,7 @@ export function Slider({ children }: Props) {
         onClick={slideLeft}
         className="text-primary hide-on-mobile absolute -left-52"
       >
-        <ArrowBackSharpIcon />
+        <ArrowLeft />
       </ClickableIcon>
       <Carousel
         swipeAngle={false}
@@ -55,7 +54,7 @@ export function Slider({ children }: Props) {
         onClick={slideRight}
         className="text-primary hide-on-mobile absolute -right-52"
       >
-        <ArrowForwardSharpIcon />
+        <ArrowRight />
       </ClickableIcon>
     </div>
   );

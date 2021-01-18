@@ -1,1 +1,1 @@
-export { CirclePage } from './CirclePage';
+export { ShapePage } from './ShapePage';

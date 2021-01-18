@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
-import TwitterIcon from '@material-ui/icons/Twitter';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import InstagramIcon from '@material-ui/icons/Instagram';
+import { Twitter, Facebook, Instagram } from '../../assets/images';
 
 interface Props {
   facebookUrl: string;
@@ -17,13 +15,13 @@ export function SocialSection({
   return (
     <div className="flex space-x-24 text-primary">
       <Link to={twitterUrl}>
-        <TwitterIcon fontSize="small" />
+        <Twitter fontSize="small" />
       </Link>
       <Link to={facebookUrl}>
-        <InstagramIcon fontSize="small" />
+        <Instagram fontSize="small" />
       </Link>
       <Link to={instagramUrl}>
-        <FacebookIcon fontSize="small" />
+        <Facebook fontSize="small" />
       </Link>
     </div>
   );

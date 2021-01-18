@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { DataContext } from './api/DataContext';
 import { Layout } from './components/page';
-import { CirclePage } from './containers';
+import { ShapePage } from './containers';
 import { default as data } from './api/data.json';
 
 function App() {
@@ -10,8 +10,9 @@ function App() {
       <Router>
         <Layout>
           <Switch>
-            <Route path="/circles/purple">
-              <CirclePage color="purple" />
+            <Route exact path="/" />
+            <Route path="/:shape/:color">
+              <ShapePage />
             </Route>
           </Switch>
         </Layout>

@@ -6,7 +6,7 @@ interface Props {
   article: Interface.ShortPost;
 }
 export function RelatedArticle({ article }: Props) {
-  const { image, title, created, excerpt } = article;
+  const { image, title, created, excerpt, link } = article;
   const date = new Date(created).toLocaleDateString(process.env.REACT_APP_LOCALE, DATE_OPTIONS);
 
   return (
@@ -15,7 +15,9 @@ export function RelatedArticle({ article }: Props) {
         <img src="https://via.placeholder.com/528" alt="placeholder" />
       )}
       {image && <img src={image.url} alt={image.alt} />}
-      <h2 className="text-primary mb-0">{title}</h2>
+      <a className="link" href={link}>
+        <h2 className="mb-0">{title}</h2>
+      </a>
       <div className="text-grey-dark text-xs my-12">{date}</div>
       <p className="text-sm">{excerpt}</p>
     </article>

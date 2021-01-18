@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { DataContext } from '../../api';
-import { Slider } from '../page';
+import { Slider } from '../ui';
 import { RelatedArticle } from './RelatedArticle';
 export function RelatedArticles() {
   const data = useContext(DataContext);

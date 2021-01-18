@@ -1,11 +1,12 @@
 import { useState, useRef, useEffect } from 'react';
-import SearchSharpIcon from '@material-ui/icons/SearchSharp';
-import CloseIcon from '@material-ui/icons/Close';
-import ClickableIcon from './ClickableIcon';
+import { Search as SearchIcon, Close } from '../../assets/images';
+import { ClickableIcon } from './ClickableIcon';
+
 interface Props {
   onToggle: (open: boolean) => void;
 }
-export default function Search({ onToggle }: Props) {
+
+export function Search({ onToggle }: Props) {
   const [open, setOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
 
@@ -49,13 +50,13 @@ export default function Search({ onToggle }: Props) {
         />
         {open && (
           <ClickableIcon onClick={handleCloseClick}>
-            <CloseIcon fontSize="small" />
+            <Close fontSize="small" />
           </ClickableIcon>
         )}
       </div>
       <ClickableIcon onClick={handleSearchClick}>
         {!open && <span className="hide-on-mobile mr-8">Search</span>}
-        <SearchSharpIcon />
+        <SearchIcon fill="black"/>
       </ClickableIcon>
     </div>
   );

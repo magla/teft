@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
+import { Logo } from '../ui';
 import FooterSection from './FooterSection';
 import { SocialSection } from './SocialSection';
 

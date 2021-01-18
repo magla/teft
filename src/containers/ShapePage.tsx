@@ -8,11 +8,7 @@ import {
   Excerpt
 } from '../components/content';
 
-interface Props {
-  color: string;
-}
-
-export function CirclePage({ color }: Props) {
+export function ShapePage() {
   const data = useContext(DataContext);
   const { title } = data;
 

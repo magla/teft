@@ -94,6 +94,6 @@
   }
 
   .center-content {
-    @apply max-w-content lg:mx-auto;
+    @apply max-w-content mx-auto;
   }
 }

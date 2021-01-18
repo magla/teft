@@ -4,7 +4,7 @@ interface Props {
   className?: string;
 }
 
-export default function ClickableIcon({ children, onClick, className }: Props) {
+export function ClickableIcon({ children, onClick, className }: Props) {
   return (
     <button
       onClick={onClick}

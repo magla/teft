@@ -1,6 +1,6 @@
 import Header from './Header';
 import Footer from './Footer';
-import { Breadcrumbs } from './Breadcrumbs';
+import { Breadcrumbs } from '../navigation';
 interface Props {
   children: React.ReactElement | React.ReactElement[];
 }

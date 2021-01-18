@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import Menu from './Menu';
-import Search from './Search';
-import Logo from './Logo';
+import { Menu } from '../navigation';
+import { Search, Logo } from '../ui';
+
 export default function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
 

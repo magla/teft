@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import MenuSharpIcon from '@material-ui/icons/MenuSharp';
-import CloseSharpIcon from '@material-ui/icons/CloseSharp';
-import ClickableIcon from './ClickableIcon';
-export default function Menu() {
+import { Menu as MenuIcon, Close } from '../../assets/images';
+import { ClickableIcon } from '../ui';
+
+export function Menu() {
   const [open, setOpen] = useState(false);
 
   // TODO: Mobile
   return (
     <>
       <ClickableIcon onClick={() => setOpen(!open)} className="hide-on-desktop">
-        {open ? <CloseSharpIcon /> : <MenuSharpIcon />}
+        {open ? <Close /> : <MenuIcon />}
       </ClickableIcon>
 
       <nav className="hide-on-mobile lg:ml-64">
