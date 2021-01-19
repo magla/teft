@@ -33,7 +33,7 @@ REACT_APP_LANGUAGE=ENG (US)
 
 **What are the benefits of using React?**\
 React is a modern framework that allows you to make modular, component-based frontend. Compared to e.g. jQuery, it allows you more control over the specific component behavior and interactivity. Oragnization of code is usually also greatly improved.\
-React provides only the View level (in a typical MVP), so it can be hooked up to a headless CMS or a Rest API. Vue is also a good candidate for this task, but frameworks like Angular are more suitable for web apps, where the focus is not on the content, but functionality.
+React provides only the View level (in a typical MVC), so it can be hooked up to a headless CMS or a Rest API. Vue is also a good candidate for this task, but frameworks like Angular are more suitable for web apps, where the focus is not on the content, but functionality.
 
 **Are there any drawbacks of using React?**\
 React does not allow on easy content input/change. If using only React, a whole seperate project to create a user-friendly admin page would have to be developed. SEO with React is still a problem, although search engines have improved. 
